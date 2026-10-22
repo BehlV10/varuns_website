@@ -1,0 +1,183 @@
+<svg viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0c0926"/>
+      <stop offset="35%"  stop-color="#31124d"/>
+      <stop offset="65%"  stop-color="#b8325a"/>
+      <stop offset="85%"  stop-color="#f5793a"/>
+      <stop offset="100%" stop-color="#ffc355"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff8e7"/>
+      <stop offset="100%" stop-color="#fff8e7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#142852"/>
+      <stop offset="100%" stop-color="#071124"/>
+    </linearGradient>
+    <linearGradient id="chrysler_crown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#4a6fa5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="240" fill="url(#sky)"/>
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="70" cy="24" r="1.2"/><circle cx="140" cy="48" r="1"/><circle cx="220" cy="20" r="1.3"/>
+    <circle cx="330" cy="55" r="1"/><circle cx="440" cy="16" r="1.2"/><circle cx="560" cy="38" r="1"/>
+    <circle cx="690" cy="22" r="1.3"/><circle cx="810" cy="52" r="1"/><circle cx="890" cy="16" r="1.2"/>
+    <circle cx="1040" cy="44" r="1"/><circle cx="1120" cy="28" r="1.3"/>
+  </g>
+  <!-- moon -->
+  <circle cx="1070" cy="72" r="46" fill="url(#moon)"/>
+  <circle cx="1070" cy="72" r="24" fill="#fff8e7"/>
+
+  <!-- Statue of Liberty silhouette (far left) -->
+  <g transform="translate(45, 140)" fill="#18233c" opacity="0.95">
+    <rect x="-10" y="55" width="20" height="25" rx="1"/>
+    <rect x="-7" y="40" width="14" height="15"/>
+    <!-- body / robes -->
+    <path d="M -5 40 L -7 20 L 7 20 L 5 40 Z"/>
+    <!-- head & crown rays -->
+    <circle cx="0" cy="15" r="4"/>
+    <line x1="-3" y1="12" x2="-6" y2="9" stroke="#18233c" stroke-width="1.5"/>
+    <line x1="0" y1="11" x2="0" y2="7" stroke="#18233c" stroke-width="1.5"/>
+    <line x1="3" y1="12" x2="6" y2="9" stroke="#18233c" stroke-width="1.5"/>
+    <!-- raised arm & torch -->
+    <path d="M 4 20 L 11 8 L 9 7 L 3 18 Z"/>
+    <polygon points="11,5 14,8 10,9" fill="#ffd866"/>
+  </g>
+
+  <!-- One World Trade Center (Freedom Tower) -->
+  <g transform="translate(180, 220)">
+    <!-- base & chamfered tower -->
+    <polygon points="-28,0 28,0 18,-175 -18,-175" fill="#223963"/>
+    <polygon points="0,0 28,0 18,-175 0,-175" fill="#325088"/>
+    <!-- parapet ring & spire -->
+    <rect x="-10" y="-180" width="20" height="5" fill="#cbd5e1"/>
+    <line x1="0" y1="-180" x2="0" y2="-218" stroke="#f1f5f9" stroke-width="2.5"/>
+    <circle cx="0" cy="-219" r="2" fill="#ff4d4d"/>
+    <!-- window glints -->
+    <g fill="#ffe8a3" opacity="0.6">
+      <rect x="-10" y="-140" width="2" height="4"/><rect x="8" y="-120" width="2" height="4"/>
+      <rect x="-4" y="-80" width="2" height="4"/><rect x="12" y="-50" width="2" height="4"/>
+    </g>
+  </g>
+
+  <!-- Mid-downtown skyline buildings -->
+  <g fill="#1a1c38">
+    <rect x="235" y="125" width="24" height="95"/>
+    <rect x="265" y="105" width="30" height="115"/>
+    <rect x="300" y="135" width="22" height="85"/>
+  </g>
+
+  <!-- Empire State Building -->
+  <g transform="translate(390, 220)">
+    <!-- tiered base -->
+    <rect x="-42" y="-70" width="84" height="70" fill="#202b4d"/>
+    <!-- mid tower -->
+    <rect x="-30" y="-130" width="60" height="60" fill="#263660"/>
+    <!-- upper setbacks -->
+    <rect x="-20" y="-165" width="40" height="35" fill="#2f4273"/>
+    <rect x="-12" y="-185" width="24" height="20" fill="#384f88"/>
+    <!-- mooring mast & antenna -->
+    <rect x="-6" y="-198" width="12" height="13" fill="#cbd5e1"/>
+    <line x1="0" y1="-198" x2="0" y2="-218" stroke="#f1f5f9" stroke-width="2.5"/>
+    <circle cx="0" cy="-219" r="2" fill="#ff4d4d"/>
+    <!-- lit windows -->
+    <g fill="#ffd866" opacity="0.6">
+      <rect x="-15" y="-125" width="2" height="4"/><rect x="-5" y="-125" width="2" height="4"/><rect x="5" y="-125" width="2" height="4"/><rect x="15" y="-125" width="2" height="4"/>
+      <rect x="-15" y="-105" width="2" height="4"/><rect x="-5" y="-105" width="2" height="4"/><rect x="5" y="-105" width="2" height="4"/><rect x="15" y="-105" width="2" height="4"/>
+      <rect x="-10" y="-155" width="2" height="4"/><rect x="0" y="-155" width="2" height="4"/><rect x="10" y="-155" width="2" height="4"/>
+    </g>
+  </g>
+
+  <!-- Chrysler Building -->
+  <g transform="translate(490, 220)">
+    <rect x="-25" y="-120" width="50" height="120" fill="#1e2848"/>
+    <rect x="-18" y="-150" width="36" height="30" fill="#283863"/>
+    <!-- art deco terraced arches / crown -->
+    <path d="M -16 -150 Q -8 -166 0 -166 Q 8 -166 16 -150 Z" fill="url(#chrysler_crown)"/>
+    <path d="M -12 -166 Q -6 -180 0 -180 Q 6 -180 12 -166 Z" fill="url(#chrysler_crown)"/>
+    <path d="M -8 -180 Q -4 -192 0 -192 Q 4 -192 8 -180 Z" fill="url(#chrysler_crown)"/>
+    <line x1="0" y1="-192" x2="0" y2="-214" stroke="#ffffff" stroke-width="2"/>
+    <!-- triangular windows in crown -->
+    <polygon points="0,-186 3,-181 -3,-181" fill="#ffd866"/>
+    <polygon points="0,-174 4,-169 -4,-169" fill="#ffd866"/>
+  </g>
+
+  <!-- Mid-Manhattan buildings -->
+  <g fill="#271d4a">
+    <rect x="540" y="115" width="28" height="105"/>
+    <rect x="575" y="90" width="34" height="130"/>
+    <polygon points="575,90 592,72 609,90" fill="#3b2b6e"/>
+    <rect x="618" y="130" width="26" height="90"/>
+    <rect x="652" y="110" width="32" height="110"/>
+  </g>
+
+  <!-- Brooklyn Bridge (spanning across the right foreground) -->
+  <g transform="translate(820, 220)">
+    <!-- West Tower -->
+    <rect x="-95" y="-135" width="30" height="135" fill="#474052"/>
+    <!-- Gothic double arches -->
+    <path d="M -90 -45 L -90 -105 Q -80 -125 -70 -105 L -70 -45 Z" fill="#0c0926" opacity="0.75"/>
+    <path d="M -90 -105 Q -80 -125 -70 -105" stroke="#cbd5e1" stroke-width="1" fill="none"/>
+    <rect x="-97" y="-138" width="34" height="5" fill="#645d70"/>
+
+    <!-- East Tower -->
+    <rect x="85" y="-135" width="30" height="135" fill="#474052"/>
+    <!-- Gothic double arches -->
+    <path d="M 90 -45 L 90 -105 Q 100 -125 110 -105 L 110 -45 Z" fill="#0c0926" opacity="0.75"/>
+    <path d="M 90 -105 Q 100 -125 110 -105" stroke="#cbd5e1" stroke-width="1" fill="none"/>
+    <rect x="83" y="-138" width="34" height="5" fill="#645d70"/>
+
+    <!-- Bridge Deck roadway -->
+    <rect x="-180" y="-45" width="380" height="8" fill="#1b1d28"/>
+    <line x1="-180" y1="-41" x2="200" y2="-41" stroke="#ffcc00" stroke-width="0.8" stroke-dasharray="8,6"/>
+
+    <!-- Main Suspension Cables -->
+    <path d="M -180 -15 Q -130 -85 -80 -135 Q 10 -40 100 -135 Q 150 -85 200 -15" stroke="#f1f5f9" stroke-width="2" fill="none" opacity="0.95"/>
+    <!-- Diagonal stay cables from towers -->
+    <g stroke="#ffffff" stroke-width="0.7" opacity="0.55">
+      <!-- West tower stays -->
+      <line x1="-80" y1="-135" x2="-160" y2="-45"/>
+      <line x1="-80" y1="-135" x2="-130" y2="-45"/>
+      <line x1="-80" y1="-135" x2="-105" y2="-45"/>
+      <line x1="-80" y1="-135" x2="-55"  y2="-45"/>
+      <line x1="-80" y1="-135" x2="-30"  y2="-45"/>
+      <line x1="-80" y1="-135" x2="-5"   y2="-45"/>
+      <!-- East tower stays -->
+      <line x1="100" y1="-135" x2="25"   y2="-45"/>
+      <line x1="100" y1="-135" x2="50"   y2="-45"/>
+      <line x1="100" y1="-135" x2="75"   y2="-45"/>
+      <line x1="100" y1="-135" x2="125"  y2="-45"/>
+      <line x1="100" y1="-135" x2="150"  y2="-45"/>
+      <line x1="100" y1="-135" x2="175"  y2="-45"/>
+    </g>
+  </g>
+
+  <!-- NYC Taxi yellow pin accent -->
+  <g transform="translate(1120, 202)">
+    <rect x="-18" y="-7" width="36" height="14" rx="3" fill="#ffcc00"/>
+    <rect x="-8" y="-12" width="16" height="5" rx="1" fill="#1a1a1a"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="9" fill="#1a1a1a">NYC</text>
+  </g>
+
+  <!-- East River foreground water strip -->
+  <rect x="0" y="220" width="1200" height="20" fill="url(#water)"/>
+  <g stroke="#5ea5ff" stroke-width="0.6" opacity="0.45" fill="none">
+    <path d="M 0 228 q 30 -3 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0"/>
+    <path d="M 0 234 q 30 -2 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0"/>
+  </g>
+
+  <!-- City lights sparkle confetti -->
+  <g opacity="0.85">
+    <circle cx="110" cy="115" r="2" fill="#ffd866"/>
+    <circle cx="340" cy="85"  r="2" fill="#7ae3ff"/>
+    <circle cx="630" cy="135" r="2" fill="#ff77aa"/>
+    <circle cx="740" cy="75"  r="2" fill="#ffd866"/>
+    <circle cx="980" cy="65"  r="2" fill="#9cf0a0"/>
+    <circle cx="1030" cy="140" r="2" fill="#7ae3ff"/>
+  </g>
+</svg>
