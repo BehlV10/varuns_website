@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Sparkles, Menu, X, ArrowUpRight, Code2 } from 'lucide-react';
 
-export default function Navbar({ onOpenStripe }) {
+export default function Navbar({ onOpenStripe, onOpenAdKit }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -38,22 +38,25 @@ export default function Navbar({ onOpenStripe }) {
           </a>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
+          <div className="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-300">
             <a href="#portfolio" className="hover:text-white transition-colors">
-              Work & Sites
+              Portfolio
+            </a>
+            <a href="#ad-showcase" className="hover:text-white transition-colors flex items-center gap-1">
+              <span>Client Ad Proof</span>
             </a>
             <a href="#services" className="hover:text-white transition-colors flex items-center gap-1.5">
-              <span>$25/mo Websites</span>
+              <span>$25/mo Service</span>
               <span className="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
                 Stripe
               </span>
             </a>
-            <a href="#how-it-works" className="hover:text-white transition-colors">
-              How It Works
-            </a>
-            <a href="#skills" className="hover:text-white transition-colors">
-              Stack
-            </a>
+            <button
+              onClick={onOpenAdKit}
+              className="text-indigo-400 hover:text-indigo-300 transition-colors text-xs font-mono font-semibold px-2 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 cursor-pointer"
+            >
+              Ad Kit (Reddit/Socials)
+            </button>
             <a href="#contact" className="hover:text-white transition-colors">
               Contact
             </a>
@@ -106,12 +109,21 @@ export default function Navbar({ onOpenStripe }) {
               </span>
             </a>
             <a
-              href="#how-it-works"
+              href="#ad-showcase"
               onClick={() => setMobileMenuOpen(false)}
               className="block text-zinc-300 hover:text-white font-medium py-1"
             >
-              How It Works
+              Client Ad Proof (Case Studies)
             </a>
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenAdKit();
+              }}
+              className="w-full text-left text-indigo-400 hover:text-indigo-300 font-medium py-1 flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>Promotional Ad Kit (Reddit/Socials)</span>
+            </button>
             <a
               href="#skills"
               onClick={() => setMobileMenuOpen(false)}

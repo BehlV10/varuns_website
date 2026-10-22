@@ -2,7 +2,7 @@ import React from 'react';
 import { Mail, ShieldCheck, Heart, ArrowUp, Code2 } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
-export default function Footer({ onOpenStripe }) {
+export default function Footer({ onOpenStripe, onOpenAdKit }) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -79,6 +79,14 @@ export default function Footer({ onOpenStripe }) {
                   className="text-indigo-400 hover:text-indigo-300 font-semibold cursor-pointer text-left"
                 >
                   Start a Site ($25/mo)
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={onOpenAdKit}
+                  className="hover:text-white transition-colors cursor-pointer text-left"
+                >
+                  Client Ad Kit & Reddit Drafts
                 </button>
               </li>
               <li>
