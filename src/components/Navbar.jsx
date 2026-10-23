@@ -40,20 +40,17 @@ export default function Navbar({ onOpenStripe, onOpenAdKit }) {
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-300">
             <a href="#portfolio" className="hover:text-white transition-colors">
-              Portfolio
-            </a>
-            <a href="#ad-showcase" className="hover:text-white transition-colors flex items-center gap-1">
-              <span>Client Ad Proof</span>
+              Work & Sites
             </a>
             <a href="#services" className="hover:text-white transition-colors flex items-center gap-1.5">
-              <span>$25/mo Service</span>
-              <span className="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
-                Stripe
-              </span>
+              <span>$25/mo Websites</span>
+            </a>
+            <a href="#how-it-works" className="hover:text-white transition-colors">
+              How It Works
             </a>
             <button
               onClick={onOpenAdKit}
-              className="text-indigo-400 hover:text-indigo-300 transition-colors text-xs font-mono font-semibold px-2 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 cursor-pointer"
+              className="text-indigo-400 hover:text-indigo-300 transition-colors text-xs font-mono font-semibold px-2.5 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 cursor-pointer"
             >
               Ad Kit (Reddit/Socials)
             </button>
@@ -101,19 +98,16 @@ export default function Navbar({ onOpenStripe, onOpenAdKit }) {
             <a
               href="#services"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-zinc-300 hover:text-white font-medium py-1 flex items-center justify-between"
+              className="block text-zinc-300 hover:text-white font-medium py-1"
             >
-              <span>$25/mo Website Service</span>
-              <span className="px-2 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
-                Stripe
-              </span>
+              $25/mo Website Service
             </a>
             <a
-              href="#ad-showcase"
+              href="#how-it-works"
               onClick={() => setMobileMenuOpen(false)}
               className="block text-zinc-300 hover:text-white font-medium py-1"
             >
-              Client Ad Proof (Case Studies)
+              How It Works & Comparison
             </a>
             <button
               onClick={() => {

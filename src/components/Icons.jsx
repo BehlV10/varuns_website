@@ -54,3 +54,20 @@ export function StripeLinkIcon({ className = 'h-5 w-auto' }) {
     </div>
   );
 }
+
+export function VenmoIcon({ className = 'h-5 w-auto' }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19.5 2c.6 1 .9 2.2.9 3.5 0 4.4-3.8 10.1-6.9 14.3H6.9L4 3.5l6-1 1.8 11.2c1.4-2.3 3.1-5.7 3.1-8.1 0-1.4-.2-2.3-.6-3.1L19.5 2z" />
+    </svg>
+  );
+}
+
+export function PayPalIcon({ className = 'h-5 w-auto' }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.72a.787.787 0 0 1 .777-.665h6.634c3.488 0 5.86 1.464 5.378 5.228-.43 3.366-2.696 5.309-5.88 5.309H9.176l-1.39 6.963a.64.64 0 0 1-.71.782z" fill="#003087" />
+      <path d="M9.176 13.592l1.04-5.228h2.637c2.38 0 3.865-.964 4.186-3.48.33-2.584-1.282-3.829-4.14-3.829H6.265a.787.787 0 0 0-.777.665L2.47 20.597a.641.641 0 0 0 .633.74h4.606l1.467-7.745z" fill="#0079C1" opacity="0.6" />
+    </svg>
+  );
+}

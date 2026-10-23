@@ -4,10 +4,10 @@ import { X, Copy, Check, ExternalLink, Share2, Megaphone, Sparkles, MessageSquar
 const adTemplates = [
   {
     platform: 'Reddit (r/forhire & r/freelance)',
-    title: '[For Hire] NYC Software Engineer — I will build and maintain your custom website for $25/month via Stripe (No $3k agency fees)',
+    title: '[For Hire] NYC Software Engineer — I will build and maintain your custom website for $25/month (No $3k agency fees)',
     badge: 'Reddit Post Draft',
     description: 'High-converting text post with live portfolio proof links and clear pricing.',
-    body: `Hey everyone! I'm Varun, an NYC-based software engineer. Outside of my day job, I partner with independent comedians, creators, event organizers, and local businesses to design, build, host, and maintain custom websites for a flat **$25 / month** via Stripe.
+    body: `Hey everyone! I'm Varun, an NYC-based software engineer. Outside of my day job, I partner with independent comedians, creators, event organizers, and local businesses to design, build, host, and maintain custom websites for a flat **$25 / month** (Card, Venmo, PayPal, Apple Pay, or Stripe).
 
 ### 🌐 Live Websites I've Built (Check Them Out):
 1. **[tightpantscomedy.com](https://tightpantscomedy.com/)** — NYC indie stand-up comedy showcase at St. Marks Comedy Club with live Eventbrite checkouts.
@@ -25,12 +25,12 @@ Portfolio: https://behlv10.github.io/varuns_website/
 - **High-Speed CDN Hosting & Free SSL** (HTTPS)
 - **Domain Connection** (hooked up directly to your .com / .org)
 - **Ongoing Maintenance & Content Updates** (need text, photo, event, or menu changes? Just send a message and it's updated in 24–48 hours)
-- **Stripe Payments / Ticket Checkout Setup** (if you sell services, products, or tickets)
-- **Zero Lock-in Contracts** — Cancel anytime with 1 click via your Stripe Customer Portal.
+- **Payment Setup / Ticket Checkouts** (if you sell services, products, or tickets)
+- **Zero Lock-in Contracts** — Cancel anytime with 1 click.
 
 If you or someone you know needs a sharp, fast website without paying an agency $3,000 upfront, check out my portfolio or shoot me a DM!`,
     redditSubmitUrl: `https://www.reddit.com/r/forhire/submit?title=${encodeURIComponent(
-      '[For Hire] NYC Software Engineer — I will build and maintain your custom website for $25/month via Stripe'
+      '[For Hire] NYC Software Engineer — I will build and maintain your custom website for $25/month'
     )}`
   },
   {
@@ -45,7 +45,7 @@ I'm taking on 3 new clients to build & maintain custom websites for $25/month:
 ✅ Custom code (fast, mobile-first, Google SEO)
 ✅ Domain setup & CDN hosting included
 ✅ Monthly updates done for you (text, photos, dates)
-✅ Stripe recurring subscription (cancel anytime)
+✅ Flexible payments (Card, Venmo, PayPal, Apple Pay, Stripe - cancel anytime)
 
 Live sites I've built:
 • tightpantscomedy.com (NYC comedy showcase)
@@ -73,7 +73,7 @@ I came across [business name] and loved what you're doing with [specific detail]
 
 I'm an NYC software engineer and web developer. I noticed your website could use a refresh / you don't have a modern mobile-optimized site set up yet, and wanted to reach out with a straightforward offer:
 
-Outside of my day job, I build and maintain custom websites for local businesses, artisanal bakeries, tailors, and creators for a flat $25/month via Stripe. No upfront thousands in agency fees, no DIY builder headaches. I handle the design, mobile optimization, domain setup, online menus/booking, and all your monthly updates.
+Outside of my day job, I build and maintain custom websites for local businesses, artisanal bakeries, tailors, and creators for a flat $25/month (Card, Venmo, PayPal, Apple Pay, or Stripe). No upfront thousands in agency fees, no DIY builder headaches. I handle the design, mobile optimization, domain setup, online menus/booking, and all your monthly updates.
 
 Here are a few live sites I've built recently:
 • behlv10.github.io/takahachi-bakery — Tribeca Japanese bakery with interactive celebration cake pre-orders
@@ -88,7 +88,7 @@ If you'd like to get a clean, high-speed website live without paying an agency $
 Best,
 Varun Behl
 Software Engineer | NYC
-varunbehl10@gmail.com`
+behlv10@gmail.com`
   }
 ];
 

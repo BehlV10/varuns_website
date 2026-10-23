@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Portfolio from './components/Portfolio';
-import AdShowcase from './components/AdShowcase';
 import StripeServiceSection from './components/StripeServiceSection';
 import SkillsSection from './components/SkillsSection';
 import Footer from './components/Footer';
@@ -37,10 +36,6 @@ export default function App() {
       <main className="flex-1">
         <Hero onOpenStripe={() => setIsStripeModalOpen(true)} />
         <Portfolio />
-        <AdShowcase
-          onOpenStripe={() => setIsStripeModalOpen(true)}
-          onOpenAdKit={() => setIsAdKitModalOpen(true)}
-        />
         <StripeServiceSection
           onOpenStripe={() => setIsStripeModalOpen(true)}
           stripeLink={stripeLink}

@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { serviceFeatures, faqItems } from '../data/projects';
 import IntakeWizard from './IntakeWizard';
-import { GooglePayIcon, ApplePayIcon, StripeLinkIcon } from './Icons';
+import { GooglePayIcon, ApplePayIcon, StripeLinkIcon, VenmoIcon, PayPalIcon } from './Icons';
 
 export default function StripeServiceSection({ onOpenStripe, stripeLink }) {
   const [openFaq, setOpenFaq] = useState(null);
@@ -66,7 +66,7 @@ export default function StripeServiceSection({ onOpenStripe, stripeLink }) {
           </h2>
 
           <p className="text-base sm:text-lg text-zinc-400 leading-relaxed">
-            Skip the massive agency invoices and stop losing weekends fighting slow DIY website builders. I will build your custom website, host it on high-speed infrastructure, and handle all your monthly updates for a flat $25/mo via Stripe.
+            Skip the massive agency invoices and stop losing weekends fighting slow DIY website builders. I will build your custom website, host it on high-speed infrastructure, and handle all your monthly updates for a flat $25/mo.
           </p>
         </div>
 
@@ -138,7 +138,7 @@ export default function StripeServiceSection({ onOpenStripe, stripeLink }) {
                 </div>
 
                 <p className="text-xs text-zinc-400 mb-6 max-w-xs">
-                  Automated monthly recurring billing via Stripe. No contracts, no cancellation fee.
+                  Simple monthly billing • Venmo, PayPal, Apple Pay, Google Pay, or Card. No contracts, cancel anytime.
                 </p>
 
                 <button
@@ -146,23 +146,28 @@ export default function StripeServiceSection({ onOpenStripe, stripeLink }) {
                   className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-indigo-500 via-indigo-600 to-purple-600 hover:from-indigo-400 hover:to-purple-500 text-white font-extrabold text-base flex items-center justify-center gap-2.5 shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
                 >
                   <Sparkles className="w-5 h-5" />
-                  <span>Subscribe & Start ($25/mo)</span>
+                  <span>Get Started ($25 / month)</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
 
-                {/* 1-Click Payment Methods Supported */}
+                {/* Flexible Payment Methods Supported */}
                 <div className="mt-4 w-full pt-3 pb-1 border-t border-white/10 flex flex-col items-center gap-1.5">
                   <span className="text-[10px] uppercase font-mono tracking-wider text-zinc-400">
-                    Fast 1-Click Checkout With
+                    Pay With Any Method You Prefer
                   </span>
                   <div className="flex flex-wrap items-center justify-center gap-2">
-                    <div className="px-2 py-0.5 rounded bg-white/10 flex items-center">
+                    <div className="px-2 py-0.5 rounded bg-white/10 flex items-center" title="Google Pay">
                       <GooglePayIcon className="h-3.5 w-auto" />
                     </div>
-                    <div className="px-2 py-0.5 rounded bg-white/10 flex items-center">
+                    <div className="px-2 py-0.5 rounded bg-white/10 flex items-center" title="Apple Pay">
                       <ApplePayIcon className="h-3.5 w-auto" />
                     </div>
-                    <StripeLinkIcon className="text-[10px] px-1.5 py-0.5" />
+                    <div className="px-2 py-0.5 rounded bg-[#008CFF]/20 text-[#008CFF] font-bold text-xs flex items-center gap-1 font-mono" title="Venmo">
+                      <span>venmo</span>
+                    </div>
+                    <div className="px-2 py-0.5 rounded bg-white/10 flex items-center text-xs font-bold text-[#0079C1] font-mono" title="PayPal">
+                      <span>PayPal</span>
+                    </div>
                     <span className="text-[11px] text-zinc-300 font-mono">Cards & Bank</span>
                   </div>
                 </div>

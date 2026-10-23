@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { X, CheckCircle2, ShieldCheck, ExternalLink, CreditCard, Sparkles, Copy, Check, Lock, Settings } from 'lucide-react';
-import { GooglePayIcon, ApplePayIcon, StripeLinkIcon } from './Icons';
+import { X, CheckCircle2, ShieldCheck, ExternalLink, CreditCard, Sparkles, Copy, Check, Lock, Settings, Mail } from 'lucide-react';
+import { GooglePayIcon, ApplePayIcon, StripeLinkIcon, VenmoIcon, PayPalIcon } from './Icons';
 
 export default function StripeModal({ isOpen, onClose, stripeLink, setStripeLink }) {
   const [copied, setCopied] = useState(false);
@@ -47,12 +47,12 @@ export default function StripeModal({ isOpen, onClose, stripeLink, setStripeLink
 
           <div className="flex items-center gap-2 mb-2">
             <span className="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
-              STRIPE SECURE CHECKOUT
+              FLEXIBLE PAYMENT OPTIONS
             </span>
           </div>
 
           <h3 className="text-2xl font-bold text-white tracking-tight">
-            Subscribe for $25 / month
+            Get Started — $25 / month
           </h3>
           <p className="text-sm text-zinc-300 mt-1">
             Custom website design, managed hosting, domain connection, and continuous updates.
@@ -117,29 +117,33 @@ export default function StripeModal({ isOpen, onClose, stripeLink, setStripeLink
               </div>
 
               {/* Supported Payment Methods Badge Bar */}
-              <div className="p-3 rounded-xl bg-zinc-900/60 border border-white/5 space-y-2">
+              <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-white/5 space-y-2">
                 <div className="text-[11px] font-mono text-zinc-400 flex items-center justify-between">
-                  <span>1-CLICK EXPRESS CHECKOUT</span>
-                  <span className="text-emerald-400 font-semibold">Stripe Dynamic Pay</span>
+                  <span>PAYMENT OPTIONS ACCEPTED</span>
+                  <span className="text-emerald-400 font-semibold">Zero Contracts</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-2 pt-0.5">
-                  <div className="px-2.5 py-1 rounded-lg bg-black/80 border border-white/10 flex items-center gap-1.5 text-white text-xs font-semibold">
-                    <GooglePayIcon className="h-4 w-auto" />
+                  <div className="px-2 py-0.5 rounded bg-black/80 border border-white/10 flex items-center">
+                    <GooglePayIcon className="h-3.5 w-auto" />
                   </div>
-                  <div className="px-2.5 py-1 rounded-lg bg-black/80 border border-white/10 flex items-center gap-1.5 text-white text-xs font-semibold">
-                    <ApplePayIcon className="h-4 w-auto" />
+                  <div className="px-2 py-0.5 rounded bg-black/80 border border-white/10 flex items-center">
+                    <ApplePayIcon className="h-3.5 w-auto" />
                   </div>
-                  <div className="px-2.5 py-1 rounded-lg bg-black/80 border border-white/10 flex items-center gap-1.5">
-                    <StripeLinkIcon />
+                  <div className="px-2 py-0.5 rounded bg-[#008CFF]/20 text-[#008CFF] font-bold text-xs flex items-center gap-1 font-mono">
+                    <span>venmo</span>
                   </div>
-                  <div className="px-2 py-1 rounded-lg bg-black/80 border border-white/10 text-[11px] text-zinc-300 font-mono">
-                    💳 Cards & Bank
+                  <div className="px-2 py-0.5 rounded bg-white/10 flex items-center text-xs font-bold text-[#0079C1] font-mono">
+                    <span>PayPal</span>
+                  </div>
+                  <div className="px-2 py-0.5 rounded bg-black/80 border border-white/10 text-[11px] text-zinc-300 font-mono">
+                    💳 Cards
                   </div>
                 </div>
               </div>
 
-              {/* Primary Stripe Button */}
+              {/* Primary Payment Buttons */}
               <div className="space-y-3 pt-1">
+                {/* 1. Card / Apple Pay / Google Pay button */}
                 <a
                   href={stripeLink}
                   target="_blank"
@@ -147,18 +151,33 @@ export default function StripeModal({ isOpen, onClose, stripeLink, setStripeLink
                   className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-sm flex items-center justify-center gap-2.5 shadow-xl shadow-indigo-600/25 hover:shadow-indigo-600/40 transition-all cursor-pointer"
                 >
                   <CreditCard className="w-4 h-4" />
-                  <span>Continue to Checkout ($25/mo)</span>
+                  <span>Pay with Card, Apple Pay, or Google Pay ($25/mo)</span>
                   <ExternalLink className="w-4 h-4 ml-1" />
                 </a>
+
+                {/* 2. Venmo & PayPal direct alternative */}
+                <div className="p-3.5 rounded-xl bg-black/50 border border-white/10 flex items-center justify-between gap-3 text-xs">
+                  <div>
+                    <span className="font-bold text-white block">Prefer Venmo or PayPal?</span>
+                    <span className="text-zinc-400 text-[11px]">Pay monthly via Venmo or PayPal (behlv10@gmail.com)</span>
+                  </div>
+                  <a
+                    href="mailto:behlv10@gmail.com?subject=Website%20Payment%20via%20Venmo%20or%20PayPal"
+                    className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-indigo-300 border border-white/10 font-medium shrink-0 flex items-center gap-1.5 transition-colors"
+                  >
+                    <Mail className="w-3.5 h-3.5" />
+                    <span>Inquire</span>
+                  </a>
+                </div>
 
                 {/* Secondary: Test Simulator */}
                 <button
                   onClick={handleSimulatePayment}
                   disabled={isProcessing}
-                  className="w-full py-2.5 px-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer border border-white/5"
+                  className="w-full py-2 px-4 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 text-xs font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer border border-white/5"
                 >
-                  <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-                  <span>{isProcessing ? 'Processing simulated payment...' : 'Simulate Test Checkout (Demo)'}</span>
+                  <Sparkles className="w-3 h-3 text-indigo-400" />
+                  <span>{isProcessing ? 'Processing simulated payment...' : 'Simulate Demo Checkout'}</span>
                 </button>
               </div>
 

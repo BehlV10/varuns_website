@@ -24,7 +24,7 @@ A high-performance personal portfolio and client-acquisition platform built with
   - Step 1: Select Website Type (Comedy Showcase, Local Business, Portfolio, Restaurant/Menu, Event/Community).
   - Step 2: Choose Features (Custom Domain, Stripe Checkout, Photo Gallery, Lead Capture, Calendar Sync, Maps).
   - Step 3: Contact details & vision notes.
-  - Automatically compiles the project brief, offers 1-click email submission to `varunbehl10@gmail.com`, and routes straight to Stripe subscription checkout.
+  - Automatically compiles the project brief, offers 1-click email submission to `behlv10@gmail.com`, and routes straight to Stripe subscription checkout or direct payment options.
 - **Feature Comparison Matrix**: Compares Traditional Agencies ($3,000+ upfront) vs Squarespace/Wix ($30/mo + DIY hassle) vs Varun's $25/mo Hands-Off Partnership.
 
 ---

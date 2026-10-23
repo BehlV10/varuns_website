@@ -274,7 +274,7 @@ export default function IntakeWizard({ onOpenStripe }) {
           <div className="space-y-2">
             <h4 className="text-2xl font-bold text-white">Project Brief Ready!</h4>
             <p className="text-zinc-300 text-sm max-w-md mx-auto">
-              Thanks {formData.name || 'friend'}! Your project brief has been compiled. You can send it directly to Varun and start your $25/mo Stripe subscription below.
+              Thanks {formData.name || 'friend'}! Your project brief has been compiled. You can send it directly to Varun and start your $25/mo plan below (Cards, Apple Pay, Venmo, or PayPal).
             </p>
           </div>
 
@@ -286,7 +286,7 @@ export default function IntakeWizard({ onOpenStripe }) {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
             <a
-              href={`mailto:varunbehl10@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`}
+              href={`mailto:behlv10@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`}
               className="w-full sm:w-auto px-5 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all border border-white/10"
             >
               <Mail className="w-4 h-4 text-indigo-400" />
@@ -298,7 +298,7 @@ export default function IntakeWizard({ onOpenStripe }) {
               className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-xl shadow-indigo-500/25 cursor-pointer hover:scale-105 transition-all"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Subscribe & Launch Site ($25/mo)</span>
+              <span>Start Website ($25/mo)</span>
             </button>
           </div>
         </div>
