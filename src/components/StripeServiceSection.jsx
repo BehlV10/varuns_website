@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { serviceFeatures, faqItems } from '../data/projects';
 import IntakeWizard from './IntakeWizard';
+import { GooglePayIcon, ApplePayIcon, StripeLinkIcon } from './Icons';
 
 export default function StripeServiceSection({ onOpenStripe, stripeLink }) {
   const [openFaq, setOpenFaq] = useState(null);
@@ -148,6 +149,23 @@ export default function StripeServiceSection({ onOpenStripe, stripeLink }) {
                   <span>Subscribe & Start ($25/mo)</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
+
+                {/* 1-Click Payment Methods Supported */}
+                <div className="mt-4 w-full pt-3 pb-1 border-t border-white/10 flex flex-col items-center gap-1.5">
+                  <span className="text-[10px] uppercase font-mono tracking-wider text-zinc-400">
+                    Fast 1-Click Checkout With
+                  </span>
+                  <div className="flex flex-wrap items-center justify-center gap-2">
+                    <div className="px-2 py-0.5 rounded bg-white/10 flex items-center">
+                      <GooglePayIcon className="h-3.5 w-auto" />
+                    </div>
+                    <div className="px-2 py-0.5 rounded bg-white/10 flex items-center">
+                      <ApplePayIcon className="h-3.5 w-auto" />
+                    </div>
+                    <StripeLinkIcon className="text-[10px] px-1.5 py-0.5" />
+                    <span className="text-[11px] text-zinc-300 font-mono">Cards & Bank</span>
+                  </div>
+                </div>
 
                 <div className="mt-4 pt-4 border-t border-white/10 w-full flex items-center justify-between text-[11px] text-zinc-400">
                   <div className="flex items-center gap-1.5">

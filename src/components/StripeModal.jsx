@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, CheckCircle2, ShieldCheck, ExternalLink, CreditCard, Sparkles, Copy, Check, Lock, Settings } from 'lucide-react';
+import { GooglePayIcon, ApplePayIcon, StripeLinkIcon } from './Icons';
 
 export default function StripeModal({ isOpen, onClose, stripeLink, setStripeLink }) {
   const [copied, setCopied] = useState(false);
@@ -115,8 +116,30 @@ export default function StripeModal({ isOpen, onClose, stripeLink, setStripeLink
                 </div>
               </div>
 
+              {/* Supported Payment Methods Badge Bar */}
+              <div className="p-3 rounded-xl bg-zinc-900/60 border border-white/5 space-y-2">
+                <div className="text-[11px] font-mono text-zinc-400 flex items-center justify-between">
+                  <span>1-CLICK EXPRESS CHECKOUT</span>
+                  <span className="text-emerald-400 font-semibold">Stripe Dynamic Pay</span>
+                </div>
+                <div className="flex flex-wrap items-center gap-2 pt-0.5">
+                  <div className="px-2.5 py-1 rounded-lg bg-black/80 border border-white/10 flex items-center gap-1.5 text-white text-xs font-semibold">
+                    <GooglePayIcon className="h-4 w-auto" />
+                  </div>
+                  <div className="px-2.5 py-1 rounded-lg bg-black/80 border border-white/10 flex items-center gap-1.5 text-white text-xs font-semibold">
+                    <ApplePayIcon className="h-4 w-auto" />
+                  </div>
+                  <div className="px-2.5 py-1 rounded-lg bg-black/80 border border-white/10 flex items-center gap-1.5">
+                    <StripeLinkIcon />
+                  </div>
+                  <div className="px-2 py-1 rounded-lg bg-black/80 border border-white/10 text-[11px] text-zinc-300 font-mono">
+                    💳 Cards & Bank
+                  </div>
+                </div>
+              </div>
+
               {/* Primary Stripe Button */}
-              <div className="space-y-3 pt-2">
+              <div className="space-y-3 pt-1">
                 <a
                   href={stripeLink}
                   target="_blank"
@@ -124,7 +147,7 @@ export default function StripeModal({ isOpen, onClose, stripeLink, setStripeLink
                   className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-sm flex items-center justify-center gap-2.5 shadow-xl shadow-indigo-600/25 hover:shadow-indigo-600/40 transition-all cursor-pointer"
                 >
                   <CreditCard className="w-4 h-4" />
-                  <span>Pay with Stripe ($25/mo)</span>
+                  <span>Continue to Checkout ($25/mo)</span>
                   <ExternalLink className="w-4 h-4 ml-1" />
                 </a>
 
