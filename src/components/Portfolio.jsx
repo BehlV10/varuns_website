@@ -9,7 +9,8 @@ export default function Portfolio() {
   const filteredProjects = projects.filter((project) => {
     if (filter === 'all') return true;
     if (filter === 'featured') return project.featured;
-    if (filter === 'client') return project.categoryType === 'client';
+    if (filter === 'food') return project.categoryType === 'food';
+    if (filter === 'business') return project.categoryType === 'business';
     if (filter === 'app') return project.categoryType === 'app';
     return true;
   });
@@ -21,22 +22,23 @@ export default function Portfolio() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-indigo-400 uppercase tracking-wider font-mono">
             <Layers className="w-3.5 h-3.5" />
-            <span>Proven In Production</span>
+            <span>11+ Live Production Websites</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Featured Websites & Live Apps
           </h2>
           <p className="text-base sm:text-lg text-zinc-400">
-            Real products built for NYC comedy producers, live music fans, and community organizers. Fast, responsive, and built to convert.
+            Real products built for NYC & Boston bakeries, bespoke tailors, comedy producers, and live event platforms. Fast, responsive, and built to convert.
           </p>
 
           {/* Filter Tabs */}
           <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
             {[
-              { id: 'all', label: 'All Projects' },
+              { id: 'all', label: 'All Projects (11)' },
               { id: 'featured', label: '⭐ Featured' },
-              { id: 'client', label: 'Production Sites' },
-              { id: 'app', label: 'Live Data Platforms' }
+              { id: 'food', label: '🥐 Bakeries & Dining' },
+              { id: 'business', label: '✂️ Tailors & Local Biz' },
+              { id: 'app', label: '⚡ Live Platforms & Apps' }
             ].map((tab) => (
               <button
                 key={tab.id}

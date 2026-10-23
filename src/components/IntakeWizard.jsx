@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import { Send, CheckCircle2, Sparkles, ArrowRight, ArrowLeft, Mail, MessageSquare } from 'lucide-react';
 
 const websiteTypes = [
-  { id: 'comedy', name: 'Comedy Show / Artist', desc: 'Ticket links, roster, video clips' },
-  { id: 'business', name: 'Local Business / Service', desc: 'Services, quote requests, hours, maps' },
-  { id: 'portfolio', name: 'Portfolio / Creator', desc: 'Visual work showcase, bio, resume' },
-  { id: 'restaurant', name: 'Restaurant / Bar / Cafe', desc: 'Menu, reservations, location, hours' },
-  { id: 'event', name: 'Event / Community Aggregator', desc: 'Schedules, calendar, RSVP, guestlist' },
-  { id: 'other', name: 'Custom Concept', desc: 'Unique idea or custom web application' }
+  { id: 'bakery', name: 'Bakery / Café / Deli', desc: 'Interactive cake pre-orders, menus, catering' },
+  { id: 'tailoring', name: 'Tailor / Atelier / Salon', desc: 'Alteration price calculator, VIP appointments' },
+  { id: 'comedy', name: 'Comedy Show / Performer', desc: 'Ticket checkouts, show line-up rosters, video clips' },
+  { id: 'business', name: 'Local Business / Service', desc: 'Services, instant quote requests, hours, maps' },
+  { id: 'event', name: 'Events & Nightlife Calendar', desc: 'Real-time schedules, venue map, RSVP guestlists' },
+  { id: 'portfolio', name: 'Creator & Artist Portfolio', desc: 'High-res gallery, press kit, bio, booking' }
 ];
 
 const featureOptions = [
   'Custom Domain (.com / .org)',
-  'Stripe Payments / Checkouts',
+  'Stripe Payments & Subscriptions',
+  'Interactive Cake / Product Builder',
+  'Appointment & Fitting Scheduler',
   'Event / Ticket Links (Eventbrite/DICE)',
-  'Interactive Photo / Video Gallery',
-  'Contact / Lead Capture Form',
-  'Google Calendar / .ics Sync',
-  'Interactive Maps (OpenStreetMap/Google)',
-  'SEO & Google Search Indexing'
+  'Interactive Photo & Lookbook Gallery',
+  'Contact & Catering Request Form',
+  'Interactive Maps (Subway / Google Maps)'
 ];
 
 export default function IntakeWizard({ onOpenStripe }) {

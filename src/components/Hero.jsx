@@ -68,18 +68,22 @@ export default function Hero({ onOpenStripe }) {
           </div>
 
           {/* Social Proof Bar */}
-          <div className="pt-10 border-t border-white/5 flex flex-wrap items-center justify-center gap-8 text-xs text-zinc-400 uppercase tracking-widest font-mono">
+          <div className="pt-10 border-t border-white/5 flex flex-wrap items-center justify-center gap-7 text-xs text-zinc-400 uppercase tracking-widest font-mono">
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span>11+ Live Production Sites</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+              <span>Bakeries, Cafés & Ateliers</span>
+            </div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
               <span>NYC Stand-Up Comedy</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-              <span>149+ Live Venue Aggregators</span>
-            </div>
-            <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-              <span>Secure Stripe Subscriptions</span>
+              <span>$25/mo Stripe Subscriptions</span>
             </div>
           </div>
         </div>

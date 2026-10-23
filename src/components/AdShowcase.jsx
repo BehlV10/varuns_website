@@ -3,6 +3,32 @@ import { ExternalLink, Sparkles, Copy, Check, Megaphone, ArrowUpRight, Share2, L
 
 const adShowcaseItems = [
   {
+    id: 'takahachi-bakery',
+    name: 'Takahachi Bakery',
+    domain: 'behlv10.github.io/takahachi-bakery',
+    targetAudience: 'Artisanal Bakeries, Cafés & Patisseries',
+    liveUrl: 'https://behlv10.github.io/takahachi-bakery/',
+    headline: 'Tribeca Japanese bakery with interactive whole cake pre-order builder',
+    keyBenefit: 'Live celebration cake calculator, custom dark chocolate message piping, café drink menus.',
+    monthlyPitch: 'Want a bakery or café website with online cake ordering & menus? Built & hosted for $25/mo.',
+    badge: 'Artisanal Bakery & Café',
+    badgeColor: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30',
+    image: './projects/takahachi-bakery.jpg'
+  },
+  {
+    id: 'wos-tailoring',
+    name: "Wo's Custom Tailoring",
+    domain: 'behlv10.github.io/wos-custom-tailoring',
+    targetAudience: 'Luxury Tailors, Ateliers & Bridal Salons',
+    liveUrl: 'https://behlv10.github.io/wos-custom-tailoring/',
+    headline: 'Upper East Side bespoke suiting atelier with VIP fitting appointment scheduler',
+    keyBenefit: 'Interactive alteration price calculator, VIP appointment booking, craftsmanship galleries.',
+    monthlyPitch: 'Need a high-end luxury atelier or salon site to book appointments? Maintained for $25/mo.',
+    badge: 'Luxury Atelier & Tailor',
+    badgeColor: 'bg-amber-500/20 text-amber-300 border-amber-500/30',
+    image: './projects/wos-tailoring.jpg'
+  },
+  {
     id: 'tight-pants',
     name: 'Tight Pants Comedy',
     domain: 'tightpantscomedy.com',
@@ -12,8 +38,21 @@ const adShowcaseItems = [
     keyBenefit: 'Custom direct-to-fan branding, Eventbrite integration, zero Squarespace headache.',
     monthlyPitch: 'Want a custom comedy or event showcase site like tightpantscomedy.com? Get yours built and maintained for $25/mo.',
     badge: 'Live Production Client',
-    badgeColor: 'bg-amber-500/20 text-amber-300 border-amber-500/30',
+    badgeColor: 'bg-indigo-500/20 text-indigo-300 border-indigo-500/30',
     image: './projects/tight-pants-live.jpg'
+  },
+  {
+    id: 'black-sheep-bagels',
+    name: 'Black Sheep Bagel Cafe',
+    domain: 'behlv10.github.io/black-sheep-bagels',
+    targetAudience: 'Local Eateries, Delis & Catering Businesses',
+    liveUrl: 'https://behlv10.github.io/black-sheep-bagels/',
+    headline: 'Harvard Square craft sourdough bagel shop with dynamic sandwich builder',
+    keyBenefit: 'Interactive custom sandwich customizer, catering quote calculator, 1-tap ordering links.',
+    monthlyPitch: 'Need a menu, sandwich customizer, or catering quote form for your eatery? $25/mo all-inclusive.',
+    badge: 'Artisanal Deli & Café',
+    badgeColor: 'bg-rose-500/20 text-rose-300 border-rose-500/30',
+    image: './projects/black-sheep-bagels.jpg'
   },
   {
     id: 'wicked-boston',
@@ -24,8 +63,8 @@ const adShowcaseItems = [
     headline: 'Real-time Boston concert & nightlife discovery platform',
     keyBenefit: 'Automated venue scrapers, Google Calendar / .ics export, zero-latency static engine.',
     monthlyPitch: 'Need a local city aggregator, directory, or events calendar? Built & hosted for $25/mo.',
-    badge: 'Live Live Domain',
-    badgeColor: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30',
+    badge: 'Live Custom Domain',
+    badgeColor: 'bg-teal-500/20 text-teal-300 border-teal-500/30',
     image: './projects/boston-events.jpg'
   },
   {
@@ -37,22 +76,9 @@ const adShowcaseItems = [
     headline: '149+ live venue aggregator with interactive OpenStreetMap dark theme',
     keyBenefit: '2-hour epoch cutoff filter, real-time ticket price comparison, 30-min scraper cron.',
     monthlyPitch: 'Interactive map and real-time community feed apps created and kept up to date for $25/mo.',
-    badge: 'Real-Time App',
+    badge: 'Real-Time Map App',
     badgeColor: 'bg-blue-500/20 text-blue-300 border-blue-500/30',
     image: './projects/nyc-skyline.svg'
-  },
-  {
-    id: 'dracula-companion',
-    name: "Dracula's Masquerade Companion",
-    domain: 'behlv10.github.io/DraculasMasqueradeCompanionApp',
-    targetAudience: 'Tabletop Gamers, Interactive Tools & Web Utilities',
-    liveUrl: 'https://behlv10.github.io/DraculasMasqueradeCompanionApp/',
-    headline: 'Interactive host companion app for board game deduction sessions',
-    keyBenefit: 'Zero-latency state tracking, role deduction history, turn timers, mobile responsive.',
-    monthlyPitch: 'Custom interactive web utilities, client calculators, and companion apps for $25/mo.',
-    badge: 'Interactive Web App',
-    badgeColor: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
-    image: './projects/dracula-icon.svg'
   }
 ];
 

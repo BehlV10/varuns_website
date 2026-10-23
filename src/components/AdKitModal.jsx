@@ -10,10 +10,15 @@ const adTemplates = [
     body: `Hey everyone! I'm Varun, an NYC-based software engineer. Outside of my day job, I partner with independent comedians, creators, event organizers, and local businesses to design, build, host, and maintain custom websites for a flat **$25 / month** via Stripe.
 
 ### 🌐 Live Websites I've Built (Check Them Out):
-1. **[tightpantscomedy.com](https://tightpantscomedy.com/)** — NYC indie stand-up comedy showcase at St. Marks Comedy Club. High-converting direct-to-fan branding, Eventbrite ticket checkout, dynamic comedian rosters.
-2. **[wickedbostonevents.com](http://www.wickedbostonevents.com/)** — Curated live Boston concert and nightlife discovery calendar with automated venue scrapers.
-3. **[behlv10.github.io/nyc_events](https://behlv10.github.io/nyc_events/)** — 149+ venue real-time event aggregator with interactive OpenStreetMap dark map, 2-hour epoch cutoff filter, and ticket price comparisons.
-4. **[Dracula's Masquerade Companion](https://behlv10.github.io/DraculasMasqueradeCompanionApp/)** — Zero-latency interactive host companion utility for board gaming sessions.
+1. **[tightpantscomedy.com](https://tightpantscomedy.com/)** — NYC indie stand-up comedy showcase at St. Marks Comedy Club with live Eventbrite checkouts.
+2. **[Takahachi Bakery](https://behlv10.github.io/takahachi-bakery/)** — Tribeca NYC Japanese artisanal bakery with interactive cake pre-order builder.
+3. **[Wo's Custom Tailoring](https://behlv10.github.io/wos-custom-tailoring/)** — Upper East Side bespoke tailoring salon with VIP appointment scheduler.
+4. **[Black Sheep Bagel Cafe](https://behlv10.github.io/black-sheep-bagels/)** — Harvard Square craft sourdough bagel shop with dynamic sandwich customizer.
+5. **[Japonaise Bakery & Cafe](https://behlv10.github.io/japonaise-bakery/)** — Historic French-Japanese bakery in Brookline, MA.
+6. **[NYC Events Aggregator](https://behlv10.github.io/nyc_events/)** — 149+ venue real-time event aggregator with interactive OpenStreetMap dark map.
+7. **[Wicked Boston Events](http://www.wickedbostonevents.com/)** — Curated live Boston concert and nightlife discovery calendar.
+
+Portfolio: https://behlv10.github.io/varuns_website/
 
 ### 💡 What's Included in the $25/month Plan:
 - **100% Custom Design & Fast Code** (React / Tailwind / Static — no sluggish WordPress or clunky page builders)
@@ -44,36 +49,41 @@ I'm taking on 3 new clients to build & maintain custom websites for $25/month:
 
 Live sites I've built:
 • tightpantscomedy.com (NYC comedy showcase)
+• behlv10.github.io/takahachi-bakery (Tribeca bakery)
+• behlv10.github.io/wos-custom-tailoring (Upper East Side tailor)
+• behlv10.github.io/black-sheep-bagels (Harvard Square bagels)
 • wickedbostonevents.com (Boston live event feed)
 • behlv10.github.io/nyc_events (149+ venue aggregator)
-• behlv10.github.io/DraculasMasqueradeCompanionApp
 
 DM me or reply if you want a custom site launched this month! 🚀`,
     twitterShareUrl: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-      `Most creators don't need a $4,000 agency website. I build & maintain custom websites for $25/month with ongoing updates included!\n\nCheck out recent sites I've built:\n• tightpantscomedy.com\n• wickedbostonevents.com\n• behlv10.github.io/nyc_events\n\nDM me to get yours live!`
+      `Most small businesses and creators don't need a $4,000 agency website. I build & maintain custom websites for $25/month with ongoing updates included!\n\nRecent sites I've built:\n• tightpantscomedy.com\n• behlv10.github.io/takahachi-bakery\n• behlv10.github.io/wos-custom-tailoring\n• wickedbostonevents.com\n\nDM me to get yours live!`
     )}`
   },
   {
     platform: 'Direct Outreach / Cold Email Pitch',
-    title: 'Personalized Pitch for Local NYC Businesses & Comedians',
+    title: 'Personalized Pitch for Local Businesses, Bakeries & Salons',
     badge: 'Email / DM Template',
-    description: 'Friendly, zero-pressure pitch to send to local businesses, performers, or organizers.',
-    body: `Subject: Quick idea for your website (plus examples: tightpantscomedy.com)
+    description: 'Friendly, zero-pressure pitch to send to local businesses, eateries, performers, or organizers.',
+    body: `Subject: Quick idea for your website (plus examples: takahachi-bakery / tightpantscomedy.com)
 
 Hi [Name],
 
-I came across your [business / show / work] and loved what you're doing with [specific detail].
+I came across [business name] and loved what you're doing with [specific detail].
 
-I'm an NYC software engineer and web developer. I noticed your website could use a refresh / you don't have a dedicated website set up yet, and wanted to reach out with a straightforward offer:
+I'm an NYC software engineer and web developer. I noticed your website could use a refresh / you don't have a modern mobile-optimized site set up yet, and wanted to reach out with a straightforward offer:
 
-Outside of my day job, I build and maintain custom websites for creators and local businesses for a flat $25/month via Stripe. No upfront thousands in agency fees, no DIY builder headaches. I handle the design, mobile optimization, domain setup, and all your monthly updates.
+Outside of my day job, I build and maintain custom websites for local businesses, artisanal bakeries, tailors, and creators for a flat $25/month via Stripe. No upfront thousands in agency fees, no DIY builder headaches. I handle the design, mobile optimization, domain setup, online menus/booking, and all your monthly updates.
 
 Here are a few live sites I've built recently:
-• tightpantscomedy.com — NYC comedy showcase at St. Marks Comedy Club with live ticket checkouts
+• behlv10.github.io/takahachi-bakery — Tribeca Japanese bakery with interactive celebration cake pre-orders
+• behlv10.github.io/wos-custom-tailoring — Upper East Side bespoke master tailoring atelier
+• tightpantscomedy.com — East Village comedy club showcase with live ticket checkouts
+• behlv10.github.io/black-sheep-bagels — Harvard Square craft sourdough bagel shop
 • wickedbostonevents.com — Curated Boston events and nightlife platform
 • behlv10.github.io/nyc_events — Real-time 5-borough calendar with 149+ venue feeds
 
-If you'd like to get a clean, high-speed website live without the usual agency prices, I'd be happy to put together a free quick preview!
+If you'd like to get a clean, high-speed website live without paying an agency $3,000 upfront, I'd be happy to put together a free quick preview!
 
 Best,
 Varun Behl
